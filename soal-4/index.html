@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="title">
+          <p>Soal 4 - Problem Solving: Formula Perhitungan</p>
+        </div>
+        <form class="content" onsubmit="return handleFindFormulaNumber(event)">
+          <div class="input-container">
+            <input
+              id="inputArrayId"
+              type="text"
+              placeholder="Masukkan urutan angka.. ( contoh: [1, 4, 5, 6 )"
+              required
+            />
+            <input
+              id="inputTargetId"
+              type="number"
+              placeholder="Masukkan target angka.. ( contoh: 16 )"
+              required
+            />
+          </div>
+          <button type="submit">
+            <p>Search</p>
+          </button>
+        </form>
+
+        <p class="content-result" id="resultId"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

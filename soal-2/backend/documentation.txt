@@ -1,0 +1,45 @@
+ **INSTRUKSI
+ 1. masuk ke folder backend (di terminal ketikkan perintah "cd backend")
+ 2. di terminal ketikkan perintah "npm install"
+ 3. buat database mongoDb (db_test)
+ 4. perhatikan file .env dan ubah sesuai dengan database yang telah dibuat
+ 5. pada file .env, sesuaikan PORT nya
+ 6. run di terminal dengan perintah "node index.js"
+
+Setelah itu test tiap endpoint pada POSTMAN
+
+1. endpoint untuk register: POST 
+http://localhost:8082/api/users/register
+
+payload = {
+    fullname: 'Test Fullname',
+    email: 'test14@test.test',
+    role: 'user'
+    password: 'Admin123'
+}
+
+
+2. endpoint untuk login: POST 
+http://localhost:8082/api/users/login
+
+payload = {
+    email: 'test14@test.test',
+    password: 'Admin123'
+}
+
+
+4. endpoint untuk get all users: GET (pastikan untuk menggunakan token yang telah didapatkan dari endpoint login)
+http://localhost:8082/api/users/users
+
+
+5. endpoint untuk get user by id: GET (pastikan untuk menggunakan token yang telah didapatkan dari endpoint login)
+http://localhost:8082/api/users/users/673590926fbb46ad03bfcaeb
+
+**note: 673590926fbb46ad03bfcaeb merupakan id user yang telah didapatkan dari endpoint login
+
+
+6. endpoint untuk delete user by id: DELETE (pastikan untuk menggunakan token yang telah didapatkan dari endpoint login)
+http://localhost:8082/api/users/users/673590926fbb46ad03bfcaeb
+
+**note: 673590926fbb46ad03bfcaeb merupakan id user yang telah didapatkan dari endpoint login
+
